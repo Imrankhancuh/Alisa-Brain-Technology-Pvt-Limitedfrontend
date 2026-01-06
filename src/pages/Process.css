@@ -1,0 +1,1108 @@
+/* Process Page Styles */
+.process-container {
+  color: var(--text-color);
+}
+
+/* Hero Section */
+.process-hero {
+  padding: 120px 0 80px;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  text-align: center;
+  color: white;
+}
+
+.process-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.process-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #ffffff, #f0f0f0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: fadeInUp 0.8s ease;
+}
+
+.process-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.process-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* BLACK HIGHLIGHTED PARAGRAPHS FOR PROCESS HERO - UPDATED STYLES */
+.process-subtitle.black-highlighted,
+.process-hero .process-subtitle.black-highlighted,
+.process-hero-content .process-subtitle.black-highlighted {
+  color: #000000 !important; /* Pure black color */
+  background-color: transparent !important; /* Removed white background */
+  padding: 0 !important; /* Removed padding */
+  border-radius: 0 !important; /* Removed border radius */
+  font-weight: 800 !important; /* Made bolder for visibility */
+  box-shadow: none !important; /* Removed box shadow */
+  border: none !important; /* Removed border */
+  display: block !important;
+  margin: 10px auto 20px !important;
+  max-width: 100% !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) !important; /* Added text shadow for visibility */
+  animation: pulse-black-subtitle 2s infinite !important;
+}
+
+.process-description.black-highlighted,
+.process-hero .process-description.black-highlighted,
+.process-hero-content .process-description.black-highlighted {
+  color: #000000 !important; /* Pure black color */
+  background-color: transparent !important; /* Removed white background */
+  padding: 0 !important; /* Removed padding */
+  border-radius: 0 !important; /* Removed border radius */
+  font-weight: 700 !important; /* Made bolder for visibility */
+  box-shadow: none !important; /* Removed box shadow */
+  border: none !important; /* Removed border */
+  display: block !important;
+  margin: 15px auto 25px !important;
+  max-width: 100% !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) !important; /* Added text shadow for visibility */
+  line-height: 1.8 !important;
+  animation: pulse-black-description 2.5s infinite !important;
+}
+
+/* Animations for black highlighted text - UPDATED */
+@keyframes pulse-black-subtitle {
+  0% {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+  }
+  50% {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+  }
+  100% {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-black-description {
+  0% {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transform: scale(1.005);
+  }
+  100% {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+  }
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Process Timeline */
+.process-steps-section {
+  padding: 80px 0;
+  background-color: var(--background-light);
+}
+
+.process-timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.process-step {
+  position: relative;
+  width: 50%;
+  padding: 30px;
+  margin-bottom: 60px;
+  z-index: 2;
+}
+
+.process-step.left {
+  left: 0;
+  text-align: right;
+}
+
+.process-step.right {
+  left: 50%;
+  text-align: left;
+}
+
+.step-number {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 3;
+}
+
+.process-step.left .step-number {
+  right: -30px;
+}
+
+.process-step.right .step-number {
+  left: -30px;
+}
+
+.step-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.step-icon {
+  font-size: 2rem;
+}
+
+.step-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.step-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.step-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.step-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+.detail-icon {
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+/* Methodology Section */
+.methodology-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.methodology-card {
+  background: var(--background-light);
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.methodology-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.methodology-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.methodology-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.methodology-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 80px 0;
+  background-color: var(--background-light);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faq-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-5px);
+}
+
+.faq-question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.faq-answer {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* CTA Section */
+.process-cta {
+  padding: 80px 0;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  text-align: center;
+  color: white;
+}
+
+.cta-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cta-description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background: white;
+  color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: white;
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* CSS Variables */
+:root {
+  --primary-color: #4f46e5;
+  --secondary-color: #7c3aed;
+  --text-color: #1f2937;
+  --text-secondary: #6b7280;
+  --background-light: #f9fafb;
+  --border-color: #e5e7eb;
+  --success-color: #10b981;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #f9fafb;
+    --text-secondary: #d1d5db;
+    --background-light: #111827;
+    --border-color: #374151;
+  }
+  
+  .step-card,
+  .faq-card {
+    background: #1f2937;
+  }
+  
+  .methodology-card {
+    background: #1f2937;
+  }
+  
+  /* Dark mode support for black highlighted text - UPDATED */
+  .process-subtitle.black-highlighted,
+  .process-hero .process-subtitle.black-highlighted,
+  .process-hero-content .process-subtitle.black-highlighted,
+  .process-description.black-highlighted,
+  .process-hero .process-description.black-highlighted,
+  .process-hero-content .process-description.black-highlighted {
+    color: #000000 !important; /* Keep black text */
+    background-color: transparent !important; /* Remove background */
+    border: none !important; /* Remove border */
+    box-shadow: none !important; /* Remove shadow */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2) !important; /* White text shadow for contrast */
+  }
+}
+
+/* Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+  .process-hero {
+    padding: 80px 0 40px;
+  }
+  
+  .process-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .process-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .process-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  /* Mobile styles for black highlighted paragraphs - UPDATED */
+  .process-subtitle.black-highlighted,
+  .process-hero .process-subtitle.black-highlighted,
+  .process-hero-content .process-subtitle.black-highlighted {
+    padding: 0 !important;
+    font-size: 1.1rem !important;
+    font-weight: 800 !important;
+    margin: 8px auto 15px !important;
+    max-width: 100% !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .process-description.black-highlighted,
+  .process-hero .process-description.black-highlighted,
+  .process-hero-content .process-description.black-highlighted {
+    padding: 0 !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    line-height: 1.5 !important;
+    margin: 10px auto 20px !important;
+    max-width: 100% !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .section-header {
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .process-steps-section,
+  .methodology-section,
+  .faq-section,
+  .process-cta {
+    padding: 50px 0;
+  }
+  
+  .timeline-line {
+    left: 20px;
+    width: 3px;
+  }
+  
+  .process-step {
+    width: 100%;
+    left: 0 !important;
+    text-align: left !important;
+    padding: 0 0 0 50px;
+    margin-bottom: 40px;
+  }
+  
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    left: 0 !important;
+    right: auto !important;
+  }
+  
+  .step-card {
+    padding: 20px;
+    margin-left: 0;
+  }
+  
+  .step-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .step-title {
+    font-size: 1.2rem;
+  }
+  
+  .step-description {
+    font-size: 0.9rem;
+  }
+  
+  .methodology-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 15px;
+  }
+  
+  .methodology-card,
+  .faq-card {
+    padding: 25px 20px;
+  }
+  
+  .methodology-icon {
+    font-size: 2.5rem;
+  }
+  
+  .methodology-title {
+    font-size: 1.1rem;
+  }
+  
+  .faq-question {
+    font-size: 1.1rem;
+  }
+  
+  .cta-title {
+    font-size: 1.8rem;
+  }
+  
+  .cta-description {
+    font-size: 1rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    padding: 14px 25px;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+}
+
+/* Tablet Devices (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .process-hero {
+    padding: 100px 0 60px;
+  }
+  
+  .process-title {
+    font-size: 2.8rem;
+  }
+  
+  .process-subtitle {
+    font-size: 1.3rem;
+  }
+  
+  /* Tablet styles for black highlighted paragraphs - UPDATED */
+  .process-subtitle.black-highlighted,
+  .process-hero .process-subtitle.black-highlighted,
+  .process-hero-content .process-subtitle.black-highlighted {
+    padding: 0 !important;
+    font-size: 1.3rem !important;
+    font-weight: 800 !important;
+    margin: 10px auto 18px !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .process-description.black-highlighted,
+  .process-hero .process-description.black-highlighted,
+  .process-hero-content .process-description.black-highlighted {
+    padding: 0 !important;
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    line-height: 1.6 !important;
+    margin: 12px auto 22px !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1.05rem;
+  }
+  
+  .process-steps-section,
+  .methodology-section,
+  .faq-section,
+  .process-cta {
+    padding: 60px 0;
+  }
+  
+  .timeline-line {
+    left: 25px;
+  }
+  
+  .process-step {
+    width: 100%;
+    left: 0 !important;
+    text-align: left !important;
+    padding: 0 0 0 60px;
+  }
+  
+  .step-number {
+    left: 0 !important;
+    right: auto !important;
+  }
+  
+  .step-card {
+    padding: 25px;
+  }
+  
+  .step-title {
+    font-size: 1.3rem;
+  }
+  
+  .methodology-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 0 20px;
+  }
+  
+  .methodology-card {
+    padding: 30px 25px;
+  }
+  
+  .methodology-icon {
+    font-size: 2.8rem;
+  }
+  
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 0 20px;
+  }
+  
+  .faq-card {
+    padding: 25px;
+  }
+  
+  .cta-title {
+    font-size: 2.2rem;
+  }
+  
+  .cta-buttons {
+    gap: 15px;
+  }
+  
+  .btn {
+    padding: 14px 35px;
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
+}
+
+/* Small Laptop/Desktop (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .process-hero {
+    padding: 110px 0 70px;
+  }
+  
+  .process-title {
+    font-size: 3rem;
+  }
+  
+  .process-hero-content {
+    max-width: 700px;
+    padding: 0 30px;
+  }
+  
+  /* Desktop styles for black highlighted paragraphs - UPDATED */
+  .process-subtitle.black-highlighted,
+  .process-hero .process-subtitle.black-highlighted,
+  .process-hero-content .process-subtitle.black-highlighted {
+    padding: 0 !important;
+    font-size: 1.4rem !important;
+    font-weight: 800 !important;
+    margin: 12px auto 22px !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .process-description.black-highlighted,
+  .process-hero .process-description.black-highlighted,
+  .process-hero-content .process-description.black-highlighted {
+    padding: 0 !important;
+    font-size: 1.15rem !important;
+    font-weight: 700 !important;
+    line-height: 1.7 !important;
+    margin: 15px auto 25px !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .section-header {
+    padding: 0 30px;
+  }
+  
+  .section-title {
+    font-size: 2.3rem;
+  }
+  
+  .process-timeline {
+    max-width: 900px;
+    padding: 40px 30px;
+  }
+  
+  .timeline-line {
+    left: 50%;
+  }
+  
+  .process-step {
+    width: calc(50% - 30px);
+  }
+  
+  .process-step.left {
+    padding: 30px 30px 30px 0;
+  }
+  
+  .process-step.right {
+    padding: 30px 0 30px 30px;
+  }
+  
+  .methodology-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 0 30px;
+  }
+  
+  .methodology-card {
+    padding: 35px 25px;
+  }
+  
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 0 30px;
+  }
+  
+  .cta-content {
+    padding: 0 30px;
+  }
+  
+  .container {
+    padding: 0 30px;
+  }
+}
+
+/* Large Desktop (1025px and above) */
+@media (min-width: 1025px) {
+  .process-title {
+    font-size: 4rem;
+  }
+  
+  .process-subtitle {
+    font-size: 1.6rem;
+  }
+  
+  /* Large desktop styles for black highlighted paragraphs - UPDATED */
+  .process-subtitle.black-highlighted,
+  .process-hero .process-subtitle.black-highlighted,
+  .process-hero-content .process-subtitle.black-highlighted {
+    padding: 0 !important;
+    font-size: 1.5rem !important;
+    font-weight: 800 !important;
+    margin: 15px auto 25px !important;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .process-description.black-highlighted,
+  .process-hero .process-description.black-highlighted,
+  .process-hero-content .process-description.black-highlighted {
+    padding: 0 !important;
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    line-height: 1.8 !important;
+    margin: 18px auto 30px !important;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .section-title {
+    font-size: 2.8rem;
+  }
+  
+  .process-timeline {
+    max-width: 1400px;
+  }
+  
+  .process-step {
+    width: calc(50% - 40px);
+  }
+  
+  .methodology-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+    margin: 40px auto 0;
+  }
+  
+  .methodology-card {
+    padding: 45px 30px;
+  }
+  
+  .methodology-icon {
+    font-size: 3.5rem;
+  }
+  
+  .methodology-title {
+    font-size: 1.4rem;
+  }
+  
+  .faq-grid {
+    max-width: 1200px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .cta-content {
+    max-width: 800px;
+  }
+  
+  .cta-title {
+    font-size: 3rem;
+  }
+  
+  .cta-description {
+    font-size: 1.2rem;
+  }
+}
+
+/* Additional responsive utilities */
+@media (max-width: 1024px) {
+  .step-card:hover,
+  .methodology-card:hover,
+  .faq-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    transform: translateY(-1px);
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .step-card:hover,
+  .methodology-card:hover,
+  .faq-card:hover {
+    transform: none;
+  }
+  
+  .step-card:active,
+  .methodology-card:active,
+  .faq-card:active {
+    transform: translateY(-3px);
+  }
+  
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    transform: none;
+  }
+  
+  .btn-primary:active,
+  .btn-secondary:active {
+    transform: translateY(-1px);
+  }
+  
+  /* Touch device adjustments for black highlighted text - UPDATED */
+  .process-subtitle.black-highlighted:active,
+  .process-description.black-highlighted:active {
+    transform: scale(0.98);
+  }
+}
+
+/* Landscape mode adjustments */
+@media (max-height: 600px) and (orientation: landscape) {
+  .process-hero {
+    padding: 60px 0 40px;
+  }
+  
+  .process-title {
+    font-size: 2.5rem;
+  }
+  
+  .process-steps-section,
+  .methodology-section,
+  .faq-section {
+    padding: 40px 0;
+  }
+  
+  .timeline-line {
+    top: 20px;
+    bottom: 20px;
+  }
+  
+  .process-step {
+    margin-bottom: 30px;
+  }
+  
+  .methodology-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Landscape adjustments for black highlighted paragraphs - UPDATED */
+  .process-subtitle.black-highlighted,
+  .process-hero .process-subtitle.black-highlighted,
+  .process-hero-content .process-subtitle.black-highlighted {
+    padding: 0 !important;
+    margin: 8px auto 15px !important;
+  }
+  
+  .process-description.black-highlighted,
+  .process-hero .process-description.black-highlighted,
+  .process-hero-content .process-description.black-highlighted {
+    padding: 0 !important;
+    margin: 10px auto 20px !important;
+  }
+}
+
+/* High-resolution displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .step-card,
+  .methodology-card,
+  .faq-card {
+    border-width: 0.5px;
+  }
+  
+  .timeline-line {
+    width: 2px;
+  }
+  
+  /* High DPI adjustments for black highlighted text - UPDATED */
+  .process-subtitle.black-highlighted,
+  .process-description.black-highlighted {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4) !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .process-hero {
+    background: var(--primary-color) !important;
+    padding: 40px 0 !important;
+  }
+  
+  .process-title {
+    font-size: 2rem !important;
+    background: none !important;
+    color: white !important;
+  }
+  
+  .process-subtitle {
+    font-size: 1.2rem !important;
+  }
+  
+  .process-description {
+    font-size: 1rem !important;
+  }
+  
+  /* Print styles for black highlighted paragraphs - UPDATED */
+  .process-subtitle.black-highlighted,
+  .process-hero .process-subtitle.black-highlighted,
+  .process-hero-content .process-subtitle.black-highlighted,
+  .process-description.black-highlighted,
+  .process-hero .process-description.black-highlighted,
+  .process-hero-content .process-description.black-highlighted {
+    color: #000000 !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    animation: none !important;
+    margin: 10px auto !important;
+    padding: 0 !important;
+    text-shadow: none !important;
+  }
+  
+  .section-title {
+    font-size: 1.8rem !important;
+  }
+  
+  .process-steps-section,
+  .methodology-section,
+  .faq-section {
+    padding: 30px 0 !important;
+  }
+  
+  .timeline-line {
+    display: none;
+  }
+  
+  .process-step {
+    width: 100% !important;
+    left: 0 !important;
+    text-align: left !important;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+    page-break-inside: avoid;
+  }
+  
+  .step-number {
+    position: relative !important;
+    margin-bottom: 10px !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+  
+  .step-card,
+  .methodology-card,
+  .faq-card {
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+    page-break-inside: avoid;
+  }
+  
+  .methodology-grid,
+  .faq-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .process-cta {
+    display: none;
+  }
+}

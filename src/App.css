@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
-}
+/* Import global styles */
+@import './styles/variables.css';
+@import './styles/base.css';
+@import './styles/utilities.css';
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Import component styles */
+@import './components/Navbar.css';
+@import './components/Footer.css';
+@import './components/ContactForm.css';
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Import page styles */
+@import './pages/Home.css';
+@import './pages/Services.css';
+@import './pages/Portfolio.css';
+@import './pages/CaseStudies.css';
+@import './pages/Experience.css';
+@import './pages/Process.css';
+@import './pages/About.css';
+@import './pages/Testimonials.css';
+@import './pages/Blog.css';
+@import './pages/FAQ.css';
+@import './pages/Contact.css';
+@import './pages/PrivacyPolicy.css';
+@import './pages/Terms.css';
